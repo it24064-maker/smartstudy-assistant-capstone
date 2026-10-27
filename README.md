@@ -42,6 +42,8 @@ Plaintext
 Task Added: Complete ICT 3107 Capstone Proposal
 Material Added: Java OOP Lecture Notes
 
-**--- Welcome Samiul to SmartStudy Dashboard ---**
+```text
+--- Welcome Samiul to SmartStudy Dashboard ---
 Total Pending Tasks: 1
 Total Study Materials: 1
+```
