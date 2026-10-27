@@ -13,7 +13,7 @@ SmartStudy Assistant (SSA) serves as the core domain model for an adaptive learn
 
 StudyDashboard: The central controller aggregating user data, task tracking, and resource management.
 
-🛠️ Tech Stack & Requirements
+** Tech Stack & Requirements**
 Language: Java 8 or higher
 
 JDK: Standard Development Kit (java.util.ArrayList, java.util.List)
@@ -35,13 +35,13 @@ Execute the compiled class:
 
 Bash
 java SmartStudyAssistant
-💻 Sample Output
+ **Sample Output**
 Running the program produces the following console output:
 
 Plaintext
 Task Added: Complete ICT 3107 Capstone Proposal
 Material Added: Java OOP Lecture Notes
 
---- Welcome Samiul to SmartStudy Dashboard ---
+**--- Welcome Samiul to SmartStudy Dashboard ---**
 Total Pending Tasks: 1
 Total Study Materials: 1
