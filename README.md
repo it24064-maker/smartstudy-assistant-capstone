@@ -1,40 +1,15 @@
 # smartstudy-assistant-capstoneSmartStudy Assistant (SSA)
 An object-oriented Java application built to streamline student workload management, study resource tracking, and academic scheduling.
 
-📌 Overview
-SmartStudy Assistant (SSA) serves as the core domain model for an adaptive learning dashboard. It manages users, tracks pending assignments with strict due dates, organizes study resources across file formats, and establishes a modular foundation for adaptive quizzes and self-assessment routines.
+ Overview
+SmartStudy Assistant (SSA) serves as the core domain model for an adaptive learning dashboard. It manages users, tracks pending assignments with strict due dates, organizes study resources across file formats, and establishes a modular foundation for adaptive quizzes and self-assessment routines.                  
+**User:** Encapsulates student profile data (userId, name).
 
-▶️ Class Architecture & Components
-The application is structured around five core domain entities:
+**Task:** Represents actionable assignments or milestones, complete with due dates and completion flags.
 
-┌─────────────────────────────────────────────────────────┐
-│                     StudyDashboard                      │
-├─────────────────────────────────────────────────────────┤
-│ - user: User                                            │
-│ - taskList: List<Task>                                  │
-│ - materialList: List<StudyMaterial>                     │
-├─────────────────────────────────────────────────────────┤
-│ + addTask(task: Task): void                             │
-│ + addMaterial(material: StudyMaterial): void            │
-│ + showSummary(): void                                   │
-└────────────▲───────────────────▲────────────────────────┘
-             │                   │
-      1      │                   │ 1..*
-┌────────────┴──┐        ┌───────┴─────────┐
-│     User      │        │      Task       │
-├───────────────┤        ├─────────────────┤
-│ - userId: int │        │ - taskId: int   │
-│ - name: String│        │ - title: String │
-└───────────────┘        │ - dueDate: String│
-                         │ - isCompleted   │
-                         └─────────────────┘
-User: Encapsulates student profile data (userId, name).
+**StudyMaterial**: Organizes study files, slides, and reference materials by file type.
 
-Task: Represents actionable assignments or milestones, complete with due dates and completion flags.
-
-StudyMaterial: Organizes study files, slides, and reference materials by file type.
-
-Quiz: Models self-assessment tests tied to specific subjects and question counts.
+**Quiz:** Models self-assessment tests tied to specific subjects and question counts.
 
 StudyDashboard: The central controller aggregating user data, task tracking, and resource management.
 
@@ -45,15 +20,8 @@ JDK: Standard Development Kit (java.util.ArrayList, java.util.List)
 
 Environment: Any standard Java IDE (Eclipse, IntelliJ IDEA, VS Code) or CLI
 
-📁 Project Structure
-Plaintext
-smartstudy-assistant/
-│
-├── src/
-│   └── SmartStudyAssistant.java   # Main driver application containing domain models
-├── bin/                           # Compiled bytecodes (.class files)
-└── README.md                      # Project documentation
-🚀 Getting Started
+
+** Getting Started**
 1. Clone or Download the Code
 Save the Java code into a file named SmartStudyAssistant.java.
 
